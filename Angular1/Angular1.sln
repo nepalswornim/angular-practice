@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular1", "Angular1\Angular1.csproj", "{C62C8754-3364-4D68-BB5F-D6210DBFA45A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C62C8754-3364-4D68-BB5F-D6210DBFA45A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62C8754-3364-4D68-BB5F-D6210DBFA45A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62C8754-3364-4D68-BB5F-D6210DBFA45A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62C8754-3364-4D68-BB5F-D6210DBFA45A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
