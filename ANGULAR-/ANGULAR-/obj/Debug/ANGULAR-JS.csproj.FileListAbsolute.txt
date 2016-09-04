@@ -1,0 +1,5 @@
+c:\users\swornim nepal\documents\visual studio 2012\Projects\ANGULAR-\ANGULAR-\bin\ANGULAR-.dll
+c:\users\swornim nepal\documents\visual studio 2012\Projects\ANGULAR-\ANGULAR-\bin\ANGULAR-.pdb
+c:\users\swornim nepal\documents\visual studio 2012\Projects\ANGULAR-\ANGULAR-\obj\Debug\ANGULAR-JS.csprojResolveAssemblyReference.cache
+c:\users\swornim nepal\documents\visual studio 2012\Projects\ANGULAR-\ANGULAR-\obj\Debug\ANGULAR-.dll
+c:\users\swornim nepal\documents\visual studio 2012\Projects\ANGULAR-\ANGULAR-\obj\Debug\ANGULAR-.pdb
