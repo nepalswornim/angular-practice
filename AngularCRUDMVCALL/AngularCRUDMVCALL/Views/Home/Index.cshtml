@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/app.js"></script>
+<script src="~/Scripts/jquery-1.7.1.js"></script>
+
+<link href="~/css/materialize.min.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div ng-app="myApp" ng-controller="userCtrl">
+    <div class="row">
+        <div class="col s3">
+            <input type="hidden" name="user.Id" ng-model="user.Id" value="{{user.Id}}" />
+            Name:
+            <input type="text" name="user.Name" ng-model="user.FullName" value="{{user.FullName}}" />
+            Username:
+            <input type="text" name="user.Username" ng-model="user.Username" value="{{user.Username}}" />
+            Password:<input type="password" name="user.Password" ng-model="user.Password" value="{{user.Password}}" />
+            Email:<input type="text" name="user.Email" ng-model="user.Email" value="{{user.Email}}" />
+            Phone:<input type="text" name="user.Contact" ng-model="user.Contact" value="{{user.Contact}}" />
+            <button type="button" name="btnSave" ng-click="saveuser(user)">Submit</button>
+            <button type="button" name="btnupdate" ng-click="updateuser(user)">Update</button>
+        </div>
+        <div class="col s6">
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>UserId</td>
+                        <td>Name</td>
+                        <td>Username</td>
+                        <td>Password</td>
+                        <td>Email</td>
+                        <td>Contact</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="usr in users | filter : search">
+                        <td>{{usr.UserId}}</td>
+                        <td>{{usr.FullName}}</td>
+                        <td>{{usr.Username}}</td>
+                        <td>{{usr.Password}}</td>
+                        <td>{{usr.Email}}</td>
+                        <td>{{usr.Contact}}</td>
+                        <td><a href="#" ng-click="getbyid(usr.UserId)">Select</a></td>
+                        <td><a href="#" ng-click="deleteuser(usr.UserId)">Delete</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col s3"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s3"></div>
+            <div class="col s3">
+            </div>
+            <div class="col s3">
+                <div class="input-field">
+                    <input id="search" type="search" ng-model="search" required>
+                    <label for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </div>
+            <div class="col s3"></div>
+        </div>
+    </div>
+</div>
